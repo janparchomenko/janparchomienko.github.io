@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Расчет степени диссоцияции и pH растворов кислоты.</title>
+    <meta charset="utf-8" />
+</head>
+<body>   
+    
+    <center><h1>Расчет степени диссоцияции и pH растворов кислоты.</h1></center>
+    <div class="LabelGroup">
+    <h4>Введите значения:</h4>
+    
+    <label for="a" >Введите C0 :<input type="text" id="a" value="0.1" /></label><br /><br />
+    <label for="b" >Введите V1 :<input type="text" id="b" value="20" /></label><br /><br />
+    <label for="c" >Введите V2 :<input type="text" id="c" value="5" /></label><br /><br />
+    <label for="d" >Введите C1 :<input type="text" id="d" value="0.1" /></label><br /><br />
+    <label for="e" >Введите V3 :<input type="text" id="e" value="20" /></label><br /><br />
+    <label for="f" >Введите V4 :<input type="text" id="f" value="5" /></label><br /><br />
+    <label for="g" >Введите C2 :<input type="text" id="g" value="0.1" /></label><br /><br />
+    </div>
+    <div class="RadioGroup">
+    <h4>Выберите слабый жлектролит:</h4>
+    <label for="UK"><input type="radio" id="UK" name="Group" checked/>Уксусная кислота</label><br /><br />
+    <label for="MK"><input type="radio" id="MK" name="Group"/>Муравьиная кислота</label><br /><br />
+    <label for="GK"><input type="radio" id="GK" name="Group"/>Гликолевая кислота</label><br /><br />
+    <label for="DK"><input type="radio" id="DK" name="Group"/>Дихлоруксусная кислота</label><br /><br />
+    <label for="MaK"><input type="radio" id="MaK" name="Group"/>Масляная кислота</label><br /><br />
+    <label for="MoK"><input type="radio" id="MoK" name="Group"/>Молочная кислота</label><br /><br />
+    <label for="TK"><input type="radio" id="TK" name="Group"/>Трихлоруксусная кислота</label><br /><br />
+    <label for="HK"><input type="radio" id="HK" name="Group"/>Хлоруксусная кислота</label><br /><br /><br />
+    </div> 
+    <center>
+    <h4><p id="element"></p></h4>
+    <p id="out1"></p> 
+    <p id="out2"></p> 
+    <p id="out3"></p>   
+    <button onclick="pH()">pH раствора</button>
+    <button onclick="SD()">Степень диссоциации</button>
+    </center>
+    
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />   
+</body>
+</html>
